@@ -5,20 +5,6 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalisisMedico", "AnalisisMedico.csproj", "{ECF303C9-F96B-4F6B-A4C4-55CFBEE8E5A0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{7F11D100-3A08-4A10-9BD9-E296E9ED3C66}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{0CD95499-F0F1-466F-AEE6-575406A5A22B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entidades", "Entidades", "{72BAF59C-BFFC-4295-9A56-6747EA2AC9A2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{82488D31-6C65-4833-B752-A6E1EF7349EA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{72837F41-9619-42A1-8AA7-50C8F630D1EF}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Registro", "Registro", "{D9B0B9F6-3E8E-4037-85D2-15B5ACD80DB5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consulta", "Consulta", "{D32885BD-6B62-4D25-9FD9-EE4F4DCECA61}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,11 +18,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{72837F41-9619-42A1-8AA7-50C8F630D1EF} = {0CD95499-F0F1-466F-AEE6-575406A5A22B}
-		{D9B0B9F6-3E8E-4037-85D2-15B5ACD80DB5} = {82488D31-6C65-4833-B752-A6E1EF7349EA}
-		{D32885BD-6B62-4D25-9FD9-EE4F4DCECA61} = {82488D31-6C65-4833-B752-A6E1EF7349EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {09CFD4C8-D1C3-48D4-9440-D95A09254F2F}
