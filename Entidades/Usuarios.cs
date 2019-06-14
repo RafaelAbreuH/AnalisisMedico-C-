@@ -15,7 +15,6 @@ namespace AnalisisMedico.Entidades
         public string Nombre { get; set; }
         public string Telefono { get; set; }
         public string Sexo { get; set; }
-        public string Sangre { get; set; }
         public string Email { get; set; }
         public DateTime FechaNacimiento { get; set; }
 
@@ -24,7 +23,6 @@ namespace AnalisisMedico.Entidades
             UsuarioId = 0;
             Nombre = String.Empty;
             Telefono = String.Empty;
-            Sangre = string.Empty;
             Sexo = string.Empty;
             Email = String.Empty;
             FechaNacimiento = DateTime.Now;

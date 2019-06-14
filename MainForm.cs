@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AnalisisMedico.UI.Registro;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace AnalisisMedico
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void UsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rUsuario ver = new rUsuario();
+            ver.MdiParent = this;
+            ver.Show();
         }
     }
 }
