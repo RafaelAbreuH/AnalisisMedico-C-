@@ -59,6 +59,19 @@ namespace AnalisisMedico.UI.Registro
             FechadateTimePicker.Value = usuario.FechaNacimiento;
         }
 
+        private bool ValidarEliminar()
+        {
+            bool paso = true;
+            MyerrorProvider.Clear();
+
+            if (IdnumericUpDown.Value == 0)
+            {
+                MyerrorProvider.SetError(IdnumericUpDown, "Debes de introducir un ID");
+                IdnumericUpDown.Focus();
+                paso = false;
+            }
+            return paso;
+        }
         private bool Validar()
         {
             bool paso = true;
@@ -147,10 +160,14 @@ namespace AnalisisMedico.UI.Registro
             int id;
             int.TryParse(IdnumericUpDown.Text, out id);
 
-            Limpiar();
+            if (ValidarEliminar())
+                return;
 
             if (UsuariosBLL.Eliminar(id))
+            {
                 MessageBox.Show("Eliminado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Limpiar();
+            }
             else
                 MyerrorProvider.SetError(IdnumericUpDown, "No se puede eliminar un usuario que no existe");
         }

@@ -11,6 +11,7 @@ namespace AnalisisMedico.DAL
     public class Contexto: DbContext
     {
         public DbSet<Usuarios> Usuario { get; set; }
+        public DbSet<TipoAnalisis> Tipoanalisis { get; set; }
 
         public Contexto() : base("ConStr")
         { }

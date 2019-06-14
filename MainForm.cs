@@ -24,5 +24,12 @@ namespace AnalisisMedico
             ver.MdiParent = this;
             ver.Show();
         }
+
+        private void TiposDeAnalisisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rTipoAnalisis ver = new rTipoAnalisis();
+            ver.MdiParent = this;
+            ver.Show();
+        }
     }
 }
