@@ -10,12 +10,12 @@ namespace AnalisisMedico.Entidades
     public class TipoAnalisis
     {
         [Key]
-        public int IdTipoAnalisis { get; set; }
+        public int TipoAnalisisId { get; set; }
         public string Descripcion { get; set; }
 
         public TipoAnalisis()
         {
-            IdTipoAnalisis = 0;
+            TipoAnalisisId = 0;
             Descripcion = String.Empty;
         }
     }

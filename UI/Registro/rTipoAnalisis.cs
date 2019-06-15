@@ -27,7 +27,7 @@ namespace AnalisisMedico.UI.Registro
         private TipoAnalisis LlenaClase()
         {
             TipoAnalisis tipoanalisis = new TipoAnalisis();
-            tipoanalisis.IdTipoAnalisis = (int)(IdnumericUpDown.Value);
+            tipoanalisis.TipoAnalisisId = (int)(IdnumericUpDown.Value);
             tipoanalisis.Descripcion = DescripciontextBox.Text;
 
             return tipoanalisis;
@@ -36,7 +36,7 @@ namespace AnalisisMedico.UI.Registro
 
         private void LlenaCampo(TipoAnalisis tipoanalisis)
         {
-            IdnumericUpDown.Value = tipoanalisis.IdTipoAnalisis;
+            IdnumericUpDown.Value = tipoanalisis.TipoAnalisisId;
             DescripciontextBox.Text = tipoanalisis.Descripcion;
 
         }

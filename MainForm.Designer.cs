@@ -32,6 +32,7 @@
             this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tiposDeAnalisisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.analisisMedicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,8 @@
             // 
             this.registrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuarioToolStripMenuItem,
-            this.tiposDeAnalisisToolStripMenuItem});
+            this.tiposDeAnalisisToolStripMenuItem,
+            this.analisisMedicoToolStripMenuItem});
             this.registrosToolStripMenuItem.Name = "registrosToolStripMenuItem";
             this.registrosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.registrosToolStripMenuItem.Text = "Registros";
@@ -67,6 +69,13 @@
             this.tiposDeAnalisisToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tiposDeAnalisisToolStripMenuItem.Text = "Tipos de Analisis";
             this.tiposDeAnalisisToolStripMenuItem.Click += new System.EventHandler(this.TiposDeAnalisisToolStripMenuItem_Click);
+            // 
+            // analisisMedicoToolStripMenuItem
+            // 
+            this.analisisMedicoToolStripMenuItem.Name = "analisisMedicoToolStripMenuItem";
+            this.analisisMedicoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.analisisMedicoToolStripMenuItem.Text = "Analisis Medico";
+            this.analisisMedicoToolStripMenuItem.Click += new System.EventHandler(this.AnalisisMedicoToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -91,6 +100,7 @@
         private System.Windows.Forms.ToolStripMenuItem registrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tiposDeAnalisisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem analisisMedicoToolStripMenuItem;
     }
 }
 

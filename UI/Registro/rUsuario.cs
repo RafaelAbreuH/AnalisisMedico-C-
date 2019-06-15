@@ -133,7 +133,6 @@ namespace AnalisisMedico.UI.Registro
                 return;
 
             usuario = LlenaClase();
-            Limpiar();
 
             //determinar si es guardar o modificar
             if (IdnumericUpDown.Value == 0)
@@ -149,7 +148,10 @@ namespace AnalisisMedico.UI.Registro
             }
             //informar el resultado
             if (paso)
+            {
                 MessageBox.Show("Guardado!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Limpiar();
+            }
             else
                 MessageBox.Show("No fue posible guardar!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }

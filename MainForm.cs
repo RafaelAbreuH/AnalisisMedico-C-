@@ -31,5 +31,12 @@ namespace AnalisisMedico
             ver.MdiParent = this;
             ver.Show();
         }
+
+        private void AnalisisMedicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rAnalisis ver = new rAnalisis();
+            ver.MdiParent = this;
+            ver.Show();
+        }
     }
 }
